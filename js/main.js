@@ -10,9 +10,9 @@
 	})
 
 	$(function(){
-		var mobile_flag = isMobile(); // true为PC端，false为手机端
+		var mobile_flag = isMobile(); 
 		if(mobile_flag){
-			alert("手机观感不佳，可以使用PC或者平板哟>_<");
+			$(".menu__handle").css("top","98%");
 		}
 	});
 
