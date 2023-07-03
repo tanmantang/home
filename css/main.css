@@ -31,10 +31,6 @@ html,body{
 	position:fixed;
 }
 
-h1 {
-	font-family: 'KaiTi';
-}
-
 button {
     cursor: pointer
 }
@@ -52,6 +48,7 @@ button {
 	font-size:2em;
 	text-align:center;
 	word-break:normal;
+	font-family: 'KaiTi';
 }
 .box>span{
 	width:800px;
@@ -61,7 +58,7 @@ button {
 	margin-top:20px;
 	color:#777;
 	word-break:normal;
-	font-family: "YouYuan";
+	font-family: 'Comic Sans MS','微软雅黑';
 }
 canvas{
 	display:block;
