@@ -3,7 +3,7 @@
 		window.open("https://www.github.com/tanmantang");
 	})
 	$(".fa-bilibili").click(function() {
-		window.open("https://www.bilibili.com");
+		window.open("https://space.bilibili.com/106338485");
 	})
 	$(".fa-envelope").click(function() {
 		window.open("mailto:tanmantang@foxmail.com");
@@ -13,6 +13,10 @@
 		var mobile_flag = isMobile(); 
 		if(mobile_flag){
 			$(".menu__handle").css("top","98%");
+			$(".box>h1").css("font-size","3em");
+			$(".box>span").css("font-size","2.5em");
+			// $("#ss_menu>.menu1").css("width","100px");
+			// $("#ss_menu>.menu1").css("height","100px");
 		}
 	});
 
