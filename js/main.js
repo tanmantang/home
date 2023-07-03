@@ -62,20 +62,6 @@
 
 	new SVGMenu(document.getElementById('menu'));
 
-	$.ajax({
-		url: "https://v1.hitokoto.cn",
-		dataType: "json",
-		async: false,
-		success: function(data) {
-			$("p").append(data + "<br />");
-			if(data.from_who == null){
-				data.from_who = "佚名";
-			}
-			$('#word').text(data.hitokoto);
-			$('#author').text("— " + data.from +"【"+data.from_who+"】");
-			console.log(data);
-		}
-	});
 })();
 
 $(document).ready(function() {
