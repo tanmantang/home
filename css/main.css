@@ -29,7 +29,10 @@ html,body{
 	height:100%;
 	background:#fff;
 	position:fixed;
-	/* cursor: pointer; */
+}
+
+h1 {
+	font-family: 'KaiTi';
 }
 
 button {
@@ -62,12 +65,31 @@ button {
 }
 canvas{
 	display:block;
-	vertical-align:bottom;
+	/* vertical-align:bottom; */
 	background:#fff;
 }
+#particles-js{
+	width:100%;
+	height:100%;
+	background-color:#000;
+	background-image:url('');
+	background-size:cover;
+	background-position:50% 50%;
+	background-repeat:no-repeat
+}
 
-.fa-weixin:hover::after{content:'';color:red;width:200px;height:200px;border:5px solid white;background:url(https://laoguoba.oss-cn-hangzhou.aliyuncs.com/publicimg/wechat.jpg) top center;background-size:100% auto;position:absolute;top:-210px;left:0px;z-index:99999}
-
+.fa-weixin:hover::after {
+	content: '';
+	width: 200px;
+	height: 200px;
+	border: 5px solid white;
+	background: url(https://laoguoba.oss-cn-hangzhou.aliyuncs.com/publicimg/wechat.jpg) left;
+	background-size: 100% auto;
+	position: absolute;
+	top: -210px;
+	left: -210px;
+	z-index: 99999;
+}
 
 @-webkit-keyframes badbounce {
 	0%,100% {
@@ -374,36 +396,12 @@ canvas{
 	transition: all 1s ease;
 }
 
-#ss_menu> .fa-weixin:hover {
-	background:url(https://laoguoba.oss-cn-hangzhou.aliyuncs.com/publicimg/wechat.jpg);
-}
-
 #ss_menu>div:hover {
 	background: #009688;
 	cursor: pointer
 }
 
-#ss_menu div:nth-child(1) {
-	top: 0;
-	left: -120px
-}
-
-#ss_menu div:nth-child(2) {
-	top: -80px;
-	left: -120px
-}
-
-#ss_menu div:nth-child(3) {
-	top: -160px;
-	left: -120px
-}
-
-#ss_menu div:nth-child(4) {
-	top: -240px;
-	left: -120px
-}
-
-/* #ss_menu div:nth-child(1) {
+ #ss_menu div:nth-child(1) {
 	top: 0;
 	left: -160px
 }
@@ -421,4 +419,4 @@ canvas{
 #ss_menu div:nth-child(4) {
 	top: -160px;
 	left: 0
-} */
+}
