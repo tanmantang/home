@@ -1,12 +1,12 @@
 var isWriter = false;
 function Hitokoto() {
     // fetch("https://v1.hitokoto.cn?encode=json")
-    fetch("https://api.tanmantang.com/api/love")
+    fetch("https://api.vvhan.com/api/love?type=json")
         .then(function (response) {
             return response.json();
         })
         .then(function (data) {
-            $('#text').text(data.text);
+            $('#text').text(data.ishan);
             if(isWriter == false ){
                 $("#text").show().typewriter();
             }else{
