@@ -10,7 +10,7 @@ function Hitokoto() {
             if(isWriter == false ){
                 $("#text").show().typewriter();
             }else{
-                window.setTimeout(Hitokoto, 100000);
+                window.setTimeout(Hitokoto, 10000);
             }
             // var author = !!data.from ? data.from : "无名氏";
             // $('#author').text("—— " + (data.from_who || '') + "「" + author + "」");
@@ -23,7 +23,7 @@ function Hitokoto() {
         });
 }
 var isID = 0;
-if (!isID) { window.setTimeout(Hitokoto, 5000);}
+if (!isID) { window.setTimeout(Hitokoto, 50);}
 console.info("别抄了，还有BUG，emmmmm，改不完，根本改不完");
 $.fn.typewriter = function () {
     this.each(function () {
