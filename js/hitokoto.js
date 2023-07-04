@@ -22,9 +22,9 @@ function Hitokoto() {
             // Hitokoto();
         });
 }
-Hitokoto();
-// var isID = 0;
-// if (!isID) { window.setTimeout(Hitokoto, 50);}
+// Hitokoto();
+var isID = 0;
+if (!isID) { window.setTimeout(Hitokoto, 50);}
 console.info("别抄了，还有BUG，Emmmmm，改不完，根本改不完");
 $.fn.typewriter = function () {
     this.each(function () {
