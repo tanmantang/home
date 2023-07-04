@@ -1,12 +1,12 @@
 var isWriter = false;
 function Hitokoto() {
     // fetch("https://v1.hitokoto.cn?encode=json")
-    fetch("https://api.vvhan.com/api/love?type=json")
+    fetch("https://api.tanmantang.com/api/love")
         .then(function (response) {
             return response.json();
         })
         .then(function (data) {
-            $('#text').text(data.ishan);
+            $('#text').text(data.text);
             if(isWriter == false ){
                 $("#text").show().typewriter();
             }else{
@@ -22,9 +22,10 @@ function Hitokoto() {
             // Hitokoto();
         });
 }
-var isID = 0;
-if (!isID) { window.setTimeout(Hitokoto, 50);}
-console.info("别抄了，还有BUG，emmmmm，改不完，根本改不完");
+Hitokoto();
+// var isID = 0;
+// if (!isID) { window.setTimeout(Hitokoto, 50);}
+console.info("别抄了，还有BUG，Emmmmm，改不完，根本改不完");
 $.fn.typewriter = function () {
     this.each(function () {
         var $ele = $(this),str = $ele.html(),progress = 0;
