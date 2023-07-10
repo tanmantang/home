@@ -1,12 +1,13 @@
 var isWriter = false;
 function Hitokoto() {
     // fetch("https://v1.hitokoto.cn?encode=json")
-    fetch("https://api.vvhan.com/api/love?type=json")
+    // fetch("https://api.vvhan.com/api/love?type=json")
+    fetch("https://api.tanmantang.com/api/love")
         .then(function (response) {
             return response.json();
         })
         .then(function (data) {
-            $('#text').text(data.ishan);
+            $('#text').text(data.text);
             if(isWriter == false ){
                 $("#text").show().typewriter();
             }else{
@@ -14,8 +15,11 @@ function Hitokoto() {
             }
             // var author = !!data.from ? data.from : "无名氏";
             // $('#author').text("—— " + (data.from_who || '') + "「" + author + "」");
-            $('#author').text("TO 「 梅宝 」");
+            $('#author a').text('TO「 梅宝 」');
             window.setTimeout(Hitokoto, 10000);
+        })
+        .then(function () {
+            // $('#author a').remove();
         })
         .catch(function (err) {
             console.error(`获取一言报错，错误信息: ${err.message}. 当前时间: ${new Date().toISOString()}`);
