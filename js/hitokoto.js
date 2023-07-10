@@ -7,7 +7,7 @@ function Hitokoto() {
             return response.json();
         })
         .then(function (data) {
-            $('#text').text(data.text);
+            $('#text').text(data.ishan);
             if(isWriter == false ){
                 $("#text").show().typewriter();
             }else{
