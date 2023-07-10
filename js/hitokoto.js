@@ -14,7 +14,7 @@ function Hitokoto() {
             }
             // var author = !!data.from ? data.from : "无名氏";
             // $('#author').text("—— " + (data.from_who || '') + "「" + author + "」");
-            $('#author').text("TO 「 梅 」");
+            $('#author').text("TO 「 梅宝 」");
             window.setTimeout(Hitokoto, 10000);
         })
         .catch(function (err) {
